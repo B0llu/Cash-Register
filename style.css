@@ -3,3 +3,73 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-width: 100vw;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: #34D399;
+}
+
+h1 {
+    padding: 10px;
+    text-decoration: solid;
+    font-style: italic;
+}
+
+p {
+    padding: 10px;
+    font-size: large;
+}
+
+#bill-amount {
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    border: 1px solid #34D399;
+    background-color: black;
+    color: #34D399;
+}
+
+#cash-given {
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    border: 1px solid #34D399;
+    background-color: black;
+    color: #34D399;
+}
+
+#check-button {
+    margin: 10px;
+    padding: 5px 10px;
+    color: #34D399;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid #34D399;
+    cursor: pointer;
+}
+
+#check-button:hover {
+    color: #056643;
+}
+
+table,
+th,
+td {
+    margin: auto;
+    border: 1px solid #34D399;
+    padding: 5px;
+    width: 50%;
+}
+
+caption {
+    padding: 10px;
+    font-size: large;
+}
