@@ -7,13 +7,15 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 const availableNotes = [2000, 500, 100, 50, 20, 10, 5, 1]
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
+    var billAm = Number(billAmount.value);
+    var cashGi = Number(cashGiven.value);
     hideMessgae();
-    if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
-            const amountToBeReturned = cashGiven.value - billAmount.value;
+    if (billAm > 0) {
+        if (cashGi >= billAm) {
+            const amountToBeReturned = cashGi - billAm;
             calculateChange(amountToBeReturned);
         } else {
-            showMessage("The cash provided should atleast be qual to the bill amount");
+            showMessage("The cash provided should be equal to the bill amount");
         }
     } else {
         showMessage("Invalid Bill Amount")
