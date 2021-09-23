@@ -18,11 +18,14 @@
         <br>
         <input id="bill-amount" type="text">
         <br>
+        <button id="next-button" value="Show Div" onclick="showDivCash()">Next</button>
+        <div id="hideDivCash"  style="display:none;" class="answer_list" >
         <label for="cash-given">Cash Given:</label>
         <br>
         <input id="cash-given" type="text">
         <br>
-        <button id="check-button">Check</button>
+        <button id="check-button" value="Show Div" onclick="showDivChange()">Check</button>
+        <div id="hideDivChange"  style="display:none;" class="answer_list" >
         <p id="error-message"></p>
         <div class="for-style">
             <table class="change-table">
@@ -55,6 +58,8 @@
                 </tr>
             </table>
         </div>
+    </div>
+    </div>
     </div>
 
 </body>

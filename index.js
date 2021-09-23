@@ -6,6 +6,15 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1]
 
+function showDivCash() {
+    document.getElementById("hideDivCash").style.display = "block";
+ }
+
+ function showDivChange() {
+    document.getElementById("hideDivChange").style.display = "block";
+ }
+
+
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
     var billAm = Number(billAmount.value);
     var cashGi = Number(cashGiven.value);
