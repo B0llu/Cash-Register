@@ -16,13 +16,13 @@
             return.</p>
         <label for="bill-amount">Bill Amount:</label>
         <br>
-        <input id="bill-amount" type="text">
+        <input id="bill-amount" min="0" type="text">
         <br>
         <button id="next-button" value="Show Div" onclick="showDivCash()">Next</button>
         <div id="hideDivCash"  style="display:none;" class="answer_list" >
         <label for="cash-given">Cash Given:</label>
         <br>
-        <input id="cash-given" type="text">
+        <input id="cash-given" min="0" type="text">
         <br>
         <button id="check-button" value="Show Div" onclick="showDivChange()">Check</button>
         <div id="hideDivChange"  style="display:none;" class="answer_list" >
