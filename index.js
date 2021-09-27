@@ -40,7 +40,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             const amountToBeReturned = cashGi - billAm;
             calculateChange(amountToBeReturned);
         } else {
-            showMessage("The cash provided should be equal to the bill amount");
+            showMessage("The cash provided should be equal or more than the bill amount");
         }
     } else {
         showMessage("Invalid Bill Amount")
